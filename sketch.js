@@ -24,7 +24,7 @@ function setup() {
     for (let i = 1; i< 142; i++){
         let year = data.getRow(i).arr[0]
         let yearAvg = data.getRow(i).arr[13]; // year avg. same data in zonal
-        let mydiameter = map(yearAvg,-.5,1,0,width)
+        let mydiameter = map(yearAvg,-1,1,0,width)
         print(i,year,mydiameter)
         stroke(random(255),random(255),random(255))
         circle(0,0,mydiameter )
